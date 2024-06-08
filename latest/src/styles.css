@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: #c2baba;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  main {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .articles-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+  }
+  :host {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+
+.article {
+  border: 1px solid #000000;
+  padding: 10px;
+  margin: 10px;
+  width: 300px; /* Ajusta el ancho del recuadro */
+}
+body {
+
+  background-color: rgb(153, 151, 151);
+}

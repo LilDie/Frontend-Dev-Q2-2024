@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Dev Q2-2024</title>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Articulos</h1>
+  </header>
+  <main>
+    <articles-list id="articlesList"></articles-list>
+  </main>
+  
+  <script type="module" src="src/components/article-component.js"></script>
+  <script type="module" src="src/components/articles-list-component.js"></script>
+  <script type="module" src="src/components/author-component.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const articlesList = document.getElementById('articlesList');
+      const response = await fetch('https://5fb46367e473ab0016a1654d.mockapi.io/articles');
+      const articles = await response.json();
+      articlesList.articles = articles;
+    });
+  </script>
+</body>
+</html>

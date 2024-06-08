@@ -1,3 +1,4 @@
-# Frontend-Dev-Q2-2024
-Test
-Latest resolution
+# Versions
+
+- [Latest](/latest)
+- [2021](/2021)
